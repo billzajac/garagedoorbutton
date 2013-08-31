@@ -9,47 +9,49 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    
     <EditText
-        android:paddingTop="20px"
         android:id="@+id/serverText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="" />
-    <Button
-        android:paddingTop="10px"
-        android:id="@+id/GetServerData"
-        android:text="Restful Webservice Call"
-        android:cursorVisible="true"
-        android:clickable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:layout_gravity="center_horizontal"
-    /> 
-    <TextView
         android:paddingTop="20px"
-        android:textStyle="bold"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Server Response (JSON): " />
+        android:text="http://10.10.0.111/button" />
+    
+    <Button
+        android:id="@+id/GetServerData"
+        android:layout_width="206dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:paddingTop="10px"
+        android:text="PRESS ME"
+        android:textSize="50sp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </Button>
+
+    <TextClock
+        android:format12Hour="hh:mm:ss a"
+        android:paddingTop="30px"
+        android:paddingLeft="16px"
+        android:textSize="20sp"
+        android:shadowColor="#7fffffff"
+        android:shadowRadius="3.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <TextView
-        android:paddingTop="16px"
         android:id="@+id/output"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Output : Click on button to get server data." />
-     
-    <TextView
-        android:paddingTop="20px"
-        android:textStyle="bold"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Parsed JSON : " />
-    <TextView
         android:paddingTop="16px"
-        android:id="@+id/jsonParsed"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-       />
- 
+        android:paddingLeft="16px"
+        android:textSize="20sp"
+        android:shadowColor="#7fffffff"
+        android:shadowRadius="3.0"
+        android:text="" />
+    
 </LinearLayout>
+
 </ScrollView>
