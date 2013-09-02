@@ -58,9 +58,10 @@ public class CurlGarageDoor extends Activity {
         private String Error = null;
         private ProgressDialog Dialog = new ProgressDialog(CurlGarageDoor.this);
         TextView uiUpdate = (TextView) findViewById(R.id.output);
-        EditText serverText = (EditText) findViewById(R.id.serverText);
-        String uri = ""+serverText.getText(); 
-         
+        //EditText serverText = (EditText) findViewById(R.id.serverText);
+        //String uri = ""+serverText.getText(); 
+        String uri = "http://10.10.0.111/button";
+        
         protected void onPreExecute() {
             // NOTE: You can call UI Element here.
             //Start Progress Dialog (Message)  
